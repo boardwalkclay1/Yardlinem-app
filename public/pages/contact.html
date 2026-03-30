@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – GreenLine Yard Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.svg" alt="GreenLine Yard Care" />
+        <span>GreenLine Yard Care</span>
+      </a>
+      <nav class="main-nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="donate.html">Donate</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="app.html" class="btn btn-outline">Get the App</a>
+        <a href="request-service.html" class="btn btn-primary">Request Yard Work</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Have a question or special request? Reach out and we’ll get back to you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <form id="contactForm" class="form-card">
+          <h2>Send a Message</h2>
+          <div class="form-field">
+            <label for="contactName">Full Name</label>
+            <input type="text" id="contactName" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="contactPhone">Phone (optional)</label>
+            <input type="tel" id="contactPhone" name="phone" />
+          </div>
+          <div class="form-field">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" rows="4" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <p class="form-status" id="contactStatus" aria-live="polite"></p>
+          </div>
+        </form>
+
+        <div class="contact-info">
+          <h2>Other Ways to Reach Us</h2>
+          <p><strong>Email:</strong> hello@example.com</p>
+          <p><strong>Phone:</strong> (555) 123‑4567</p>
+          <p><strong>Service Area:</strong> Local neighborhoods in our region.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">GreenLine Yard Care</span>
+        <p>Serving our community with reliable, respectful yard care.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Navigate</h4>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="donate.html">Donate</a>
+          <a href="app.html">App</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="refund-policy.html">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> GreenLine Yard Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
