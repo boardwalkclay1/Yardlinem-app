@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Donate – GreenLine Yard Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Support our mission with a donation." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body data-page="donate">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.svg" alt="GreenLine Yard Care" />
+        <span>GreenLine Yard Care</span>
+      </a>
+      <nav class="main-nav">
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="donate.html" class="active">Donate</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="app.html" class="btn btn-outline">Get the App</a>
+        <a href="request-service.html" class="btn btn-primary">Request Yard Work</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Support Our Mission</h1>
+        <p>Your donation helps us serve more neighbors, maintain equipment, and offer discounted services where they’re needed most.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="donationForm" class="form-card">
+          <h2>Donation Amount</h2>
+          <div class="donation-amounts">
+            <button type="button" class="btn btn-secondary js-set-amount" data-amount="25">$25</button>
+            <button type="button" class="btn btn-secondary js-set-amount" data-amount="50">$50</button>
+            <button type="button" class="btn btn-secondary js-set-amount" data-amount="100">$100</button>
+          </div>
+          <div class="form-field">
+            <label for="donationAmount">Custom Amount</label>
+            <div class="input-prefix">
+              <span>$</span>
+              <input type="number" id="donationAmount" name="amount" min="1" step="1" required />
+            </div>
+          </div>
+
+          <h2>Donor Information</h2>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="donorName">Full Name</label>
+              <input type="text" id="donorName" name="name" required />
+            </div>
+            <div class="form-field">
+              <label for="donorEmail">Email</label>
+              <input type="email" id="donorEmail" name="email" required />
+            </div>
+          </div>
+
+          <h2>Payment Details</h2>
+          <p class="field-help">This is a placeholder form. You’ll connect it to a payment provider via Cloudflare Workers.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="cardNumber">Card Number</label>
+              <input type="text" id="cardNumber" name="cardNumber" inputmode="numeric" />
+            </div>
+            <div class="form-field">
+              <label for="cardExpiry">Expiry (MM/YY)</label>
+              <input type="text" id="cardExpiry" name="cardExpiry" />
+            </div>
+            <div class="form-field">
+              <label for="cardCvc">CVC</label>
+              <input type="text" id="cardCvc" name="cardCvc" />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit Donation</button>
+            <p class="form-status" id="donationStatus" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">GreenLine Yard Care</span>
+        <p>Serving our community with reliable, respectful yard care.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Navigate</h4>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="donate.html">Donate</a>
+          <a href="app.html">App</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="terms.html">Terms of Use</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="refund-policy.html">Refund Policy</a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> GreenLine Yard Care. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
